@@ -231,6 +231,31 @@ window.addEventListener('resize', () => {
 
 // Initialize and animate particles
 initParticles();
-animateParticles();
+animateParticles();const scrollableContainer = document.querySelector('.card-track');
 
+let isScrolling = false;
+let scrollStartPosition = 0;
+let scrollStartTime = 0;
 
+scrollableContainer.addEventListener('mousedown', (event) => {
+  isScrolling = true;
+  scrollStartPosition = event.clientX;
+  scrollStartTime = Date.now();
+});
+
+scrollableContainer.addEventListener('mousemove', (event) => {
+  if (isScrolling) {
+    const deltaX = event.clientX - scrollStartPosition;
+    scrollableContainer.scrollLeft += deltaX;
+    scrollStartPosition = event.clientX;
+  }
+});
+
+scrollableContainer.addEventListener('mouseup', () => {
+  isScrolling = true;
+});
+
+scrollableContainer.addEventListener('wheel', (event) => {
+  event.preventDefault();
+  scrollableContainer.scrollLeft += event.deltaX;
+});

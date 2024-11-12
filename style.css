@@ -237,18 +237,20 @@ h1 {
 }
 
 .team-container {
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    border: blue solid 2px;
+    border-radius: 25px;
 }
 
 .card-track {
     display: flex;
     gap: 2rem;
     padding: 2rem;
-    animation: scroll 40s linear infinite;
-    width: fit-content;
+    overflow-x: hidden; /* Hide the default scrollbar */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .card {
@@ -302,11 +304,11 @@ h1 {
 }
 
 @keyframes scroll {
-    0% {
+    5% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-300px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
+        transform: translateX(calc(-750px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
     }
 }
 
@@ -1197,6 +1199,7 @@ html, body {
         gap: 1rem;
         animation: none; /* Disable scroll animation on mobile */
         padding: 1rem;
+        scroll-behavior: smooth;
     }
 
     .card {
@@ -1324,7 +1327,7 @@ html, body {
 }
 
 /* Container for cards */
-.card-container {
+.cardd-container {
     display: flex; /* Use flexbox for horizontal layout */
     justify-content: space-around; /* Space between the cards */
     gap: 20px; /* Optional: adjust the gap between cards */
@@ -1332,9 +1335,9 @@ html, body {
   }
   
   /* Card styles */
-  .card {
+  .cardd {
     position: relative;
-    width: 220px;
+    width: 250px;
     height: 320px;
     display: flex;
     align-items: center;
@@ -1347,8 +1350,8 @@ html, body {
     transition: color 0.5s;
   }
   
-  .card::before,
-  .card::after {
+  .cardd::before,
+  .cardd::after {
     position: absolute;
     content: "";
     width: 20%;
@@ -1357,32 +1360,32 @@ html, body {
     z-index: 1;
   }
   
-  .card::before {
+  .cardd::before {
     top: 0;
     right: 0;
     border-radius: 0 15px 0 100%;
   }
   
-  .card::after {
+  .cardd::after {
     bottom: 0;
     left: 0;
     border-radius: 0 100% 0 15px;
   }
   
   /* Hover effects for expanding background */
-  .card:hover::before,
-  .card:hover::after {
+  .cardd:hover::before,
+  .cardd:hover::after {
     width: 100%;
     height: 100%;
     border-radius: 15px;
   }
   
-  .card:hover {
+  .cardd:hover {
     color: white; /* Change text color on hover */
   }
   
   /* Container for hover text */
-  .card .hover-text {
+  .cardd .hover-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -1403,7 +1406,7 @@ html, body {
   }
   
   /* Show hover text on hover */
-  .card:hover .hover-text {
+  .cardd:hover .hover-text {
     opacity: 1;
   }
   
