@@ -5,31 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-links a');
     const eventSlides = document.querySelectorAll('.event-slide');
     
-    
-    // Only clone cards for desktop view
-    function handleCardTrack() {
-        if (window.innerWidth > 768) {
-            // Clear existing clones
-            track.innerHTML = '';
-            
-            // Add original cards
-            cards.forEach(card => {
-                track.appendChild(card.cloneNode(true));
-            });
-            
-            // Add clones for infinite scroll
-            cards.forEach(card => {
-                track.appendChild(card.cloneNode(true));
-            });
-        } else {
-            // Reset for mobile view
-            track.innerHTML = '';
-            cards.forEach(card => {
-                track.appendChild(card.cloneNode(true));
-            });
-        }
-    }
-
     // Initial setup
     handleCardTrack();
 
