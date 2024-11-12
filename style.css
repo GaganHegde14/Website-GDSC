@@ -459,7 +459,7 @@ html {
 
 .event-card,
 .project-card {
-    background: white;
+    background: #c0bfbf;
     border-radius: 12px;
     padding: 1.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -562,7 +562,7 @@ html {
 }
 
 .project-card {
-    background-color: #ffffff; /* White background for cards */
+    background-color: #e0e0e0; /* White background for cards */
     color: #333333;
     width: 430px;
     border-radius: 10px; /* Rounded corners */
