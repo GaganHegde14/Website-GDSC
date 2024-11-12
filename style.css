@@ -241,7 +241,8 @@ h1 {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    border: blue solid 2px;
+    border: black solid 5px;
+    background-color: #1a1a1a;
     border-radius: 25px;
 }
 
@@ -255,7 +256,8 @@ h1 {
 
 .card {
     flex: 0 0 300px;
-    background: white;
+    background: #BDBDBD;
+    color: white;
     border-radius: 15px;
     padding: 1.5rem;
     text-align: center;
@@ -303,14 +305,6 @@ h1 {
     opacity: 1;
 }
 
-@keyframes scroll {
-    5% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-750px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
-    }
-}
 
 /* Add this to your media queries */
 @media (max-width: 768px) {
