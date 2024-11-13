@@ -237,7 +237,7 @@ h1 {
 }
 
 .team-container {
-    max-width: 95%;
+    max-width: 98%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -252,6 +252,7 @@ h1 {
     padding: 2rem;
     overflow-x: hidden; /* Hide the default scrollbar */
     white-space: nowrap; /* Prevent text wrapping */
+    animation: scroll 40s linear infinite;
 }
 
 .card {
@@ -468,7 +469,7 @@ html {
     min-height: 300px;
     display: flex;
     flex-direction: column;
-    opacity: 0;
+    
     transform: translateY(50px);
 }
 
@@ -570,7 +571,7 @@ html {
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease, opacity 0.5s ease;
-    opacity: 0;
+    
     transform: translateY(50px);
 }
 
@@ -843,7 +844,7 @@ h2{
     font-size: 4rem;
     margin-bottom: 5rem;
     transform: translateY(50px);
-    opacity: 0;
+
     transition: all 1s ease;
 }
 
@@ -1195,7 +1196,16 @@ html, body {
         padding: 1rem;
         scroll-behavior: smooth;
     }
-
+    @keyframes scroll {
+    
+        5% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-300px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
+            transform: translateX(calc(-750px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
+        }
+    }
     .card {
         flex: 0 0 calc(50% - 1rem); /* Two cards per row */
         min-width: 250px;
