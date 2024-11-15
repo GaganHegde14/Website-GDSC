@@ -206,7 +206,8 @@ window.addEventListener('resize', () => {
 
 // Initialize and animate particles
 initParticles();
-animateParticles();const scrollableContainer = document.querySelector('.card-track');
+animateParticles();
+const scrollableContainer = document.querySelector('.card-track');
 
 let isScrolling = false;
 let scrollStartPosition = 0;
@@ -234,3 +235,4 @@ scrollableContainer.addEventListener('wheel', (event) => {
   event.preventDefault();
   scrollableContainer.scrollLeft += event.deltaX;
 });
+
