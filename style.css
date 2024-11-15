@@ -457,7 +457,6 @@ html {
     gap: 2rem;
     padding: 0 2rem;
 }
-
 .event-card,
 .project-card {
     background: #c0bfbf;
@@ -469,8 +468,20 @@ html {
     min-height: 300px;
     display: flex;
     flex-direction: column;
-    
-    transform: translateY(50px);
+    transition: background 1s ease-in-out, color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.event-card .event-title,
+.project-card:hover .event-title {
+    color: #333; /* Initial title color */
+    transition: color 1s ease-in-out;
+}
+
+.event-card .event-description, 
+.project-card:hover .event-description {
+    color: #666; /* Initial description color */
+    opacity: 1;
+    transition: color 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .event-card.visible,
@@ -479,10 +490,39 @@ html {
     transform: translateY(0);
 }
 
+.event-card:hover .event-title,
+.project-card:hover .event-title {
+    color: #fff; /* Title color changes to white */
+}
+
+.event-card:hover .event-description,
+.project-card:hover .event-description {
+    color: #fff; /* Description color changes to white */
+    opacity: 1; /* Ensures the description text is fully visible */
+}
+
 .event-card:hover,
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: scale(105%);
+    background: linear-gradient(0deg, #000000 0%, #3e3d3d 50%, #706e6e 100%); /* Black at bottom, lighter at top */
+    background-size: 400% 400%; /* Make the gradient larger for smooth animation */
+    animation: gradient-animation 20s linear infinite; /* Apply the gradient animation */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
 }
+
+/* Define the gradient animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 100%; /* Start with black at the bottom */
+    }
+    50% {
+        background-position: 0% 0%; /* Move the black color up */
+    }
+    100% {
+        background-position: 0% 100%; /* Return to the original position with black at the bottom */
+    }
+}
+
 
 .event-image {
     width: 100%;
@@ -562,18 +602,6 @@ html {
     gap: 30px;
 }
 
-.project-card {
-    background-color: #e0e0e0; /* White background for cards */
-    color: #333333;
-    width: 430px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease, opacity 0.5s ease;
-    
-    transform: translateY(50px);
-}
 
 .project-card.visible {
     opacity: 1;
