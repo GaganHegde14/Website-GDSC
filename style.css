@@ -630,10 +630,6 @@ html {
     padding: 0 20px 20px;
     color: #666666;
 }
-
-
-
-
 /* footer */
 /* Footer Section Styling */
 .footer-section {
@@ -642,55 +638,51 @@ html {
     color: #ffffff; /* White text color */
     text-align: center;
     font-family: Arial, sans-serif;
-}
-
-.footer-container {
+  }
+  
+  .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.footer-title {
+  }
+  
+  .footer-title {
     font-size: 1.5em;
     margin-bottom: 20px;
     font-weight: bold;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.footer-links li {
-    display: inline;
-}
-
-.footer-links a {
-    color: #ffffff; /* White color for links */
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #FFD700; /* Gold color on hover */
-}
-
-.footer-note {
+  }
+  
+  .footer-note {
     font-size: 0.9em;
     margin-top: 20px;
     color: #e0e0e0; /* Slightly lighter color for note */
-}
-/* Basic Reset */
-* {
+  }
+  
+  /* Mobile Specific Styles */
+  .footer-section--mobile {
+    display: none; /* Initially hide social links on larger screens */
+  }
+  
+  /* Media Queries for Mobile Screens */
+  @media (min-width: 768px) {
+    .footer-section {
+      /* Remove padding on smaller screens */
+      padding: 20px 0;
+    }
+    
+    .footer-section--mobile {
+      display: flex; /* Show social links on smaller screens */
+      justify-content: center; /* Center social links horizontally */
+      margin-top: 20px; /* Add spacing above social links */
+    }
+  }
+  
+  /* Basic Reset */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
 /* Canvas for the Particle Animation */
 /* Canvas Background */
@@ -1504,3 +1496,58 @@ html, body {
       margin-bottom: 20px;      /* Add space between stacked cards */
     }
   }
+  /* Ensure paragraph and button are treated as blocks inside hover-text */
+.cardd .hover-text {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Align items in the center */
+    gap: 10px; /* Add spacing between the paragraph and the button */
+}
+
+/* General Button Styling */
+.cardd .hover-text button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.cardd .hover-text button a {
+    text-decoration: none;
+    color: inherit; /* Match the button text color */
+}
+
+/* Red Button */
+.red-button {
+    background-color: #DB4437; /* Red */
+}
+.red-button:hover {
+    background-color: #b03629; /* Darker Red */
+}
+
+/* Blue Button */
+.blue-button {
+    background-color: #4285F4; /* Blue */
+}
+.blue-button:hover {
+    background-color: #3367c1; /* Darker Blue */
+}
+
+/* Green Button */
+.green-button {
+    background-color: #34A853; /* Green */
+}
+.green-button:hover {
+    background-color: #27853c; /* Darker Green */
+}
+
+/* Yellow Button */
+.yellow-button {
+    background-color: #FBBC05; /* Yellow */
+}
+.yellow-button:hover {
+    background-color: #e5a800; /* Darker Yellow */
+}
