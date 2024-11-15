@@ -101,7 +101,6 @@ main {
     flex: 1;
     background-color: rgba(26, 26, 26, 0.9);;
     padding: 2rem;
-    
     letter-spacing: -1px;
 }
 .animated-text {
@@ -745,7 +744,7 @@ h2{
 }.contact-heading {
     font-family: Roboto, sans-serif;
     font-weight: bold;
-    color: #4285F4; /* Google's primary blue */
+    color: whitesmoke; /* Google's primary blue */
     text-align: center;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
