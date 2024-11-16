@@ -16,21 +16,30 @@
 <body>
     
     <canvas id="particleCanvas"></canvas>
+    <div class="preloader">
+        <video id="preloader-video" muted>
+            <source src="./assets/Animation - 1730972546160 (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
     <nav>
         <div class="logo">
-            <a href="index.html"><img src="./assets/logoNObg.png" alt="GDSC Logo">
+            <a href="index.html">
+                <img src="./assets/logoNObg.png" alt="GDSC Logo">
             </a>
             <span>Google Developer Group - Cit Main Campus</span>
         </div>
 
-        <!-- Add hamburger menu button -->
+        <!-- Hamburger menu button -->
         <div class="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <div class="nav-menu" id="navMenu">
+        <!-- Navigation menu -->
+        <div class="nav-menu">
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#events">Events</a>
@@ -311,7 +320,7 @@
                     </div>
                     <div class="card">
                         <img src="./assets/noProfile.png" alt="Team Member">
-                        <h3>NARESH KARTHIGEYAN</h3>
+                        <h3>Naresh Karthigeyan</h3>
                         <p><b>Core Team</b></p>
                         <p>Game Dev</p>
                         <div class="social-links">
@@ -365,7 +374,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./assets/noProfile.png" alt="Team Member">
+                        <img src="./assets/kaif-blackHood2.jpg" alt="Team Member">
                         <h3>Kaif Ali Khan</h3>
                         
                         <p><b>Volunteer</b></p>
@@ -410,7 +419,9 @@
                     <!-- Repeat for other cards -->
                 </div>
                 
-            <button class="see-all-btn">See All</button>
+            </div>
+            <div class="button-container">
+                <button class="see-all-btn">See All</button>
             </div>
         </section>
         <section  id="contact">
