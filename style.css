@@ -78,14 +78,13 @@ main {
     width: 100%;
     opacity: 0;
     animation: slideInFromLeft 1s ease-out forwards;
-    animation-delay: 0.5s;
+    animation-delay: 3.5s; /* Adjust delay to 3 seconds */
 }
 
 .building {
     max-width: 400px;
     height: 200px;
 }
-
 .belowSymbol {
     font-size: 2.5rem;
     font-weight: 900;
@@ -93,8 +92,8 @@ main {
     margin-top: 1rem;
     max-width: 800px;
     opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 1.2s;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 4.2s; /* Adjust delay to 3 seconds */
 }
 
 .text-section {
@@ -107,6 +106,7 @@ main {
     display: inline-block;
     letter-spacing: -4px; /* Adjust as needed */
     animation: colorChange 3s ;
+    animation-delay: 3.9s; /* Add a delay for the animated text */
   }
   
   @keyframes colorChange {
@@ -1165,7 +1165,7 @@ html, body {
     }
 
     /* Team section fixes */
-    .card-track {
+    .track {
         padding: 1rem 0;
         width: 100%;
         overflow-x: hidden;
@@ -1316,31 +1316,12 @@ html, body {
     text-align: center;
 }
 
-.sym {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    opacity: 0; /* Start hidden */
-    animation: slideInFromLeft 1s ease-out forwards; /* Add animation */
-    animation-delay: 0.5s; /* Optional: Add a slight delay */
-}
 
 .building {
     max-width: 400px;
     height: 200px;
 }
 
-/* Add animation for the text below the logo */
-.belowSymbol {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: rgb(185, 181, 181);
-    margin-top: 1rem;
-    max-width: 800px;
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 1.2s;
-}
 
 @keyframes fadeIn {
     0% {
@@ -1360,17 +1341,17 @@ html, body {
     }
     
     .belowSymbol {
-        animation-delay: 1s;
+        animation-delay: 3.8s;
     }
 }
 
 /* Container for cards */
 .cardd-container {
     display: flex; /* Use flexbox for horizontal layout */
-    justify-content: space-around; /* Space between the cards */
-    gap: 10px; /* Optional: adjust the gap between cards */
+    gap: 50px; /* Optional: adjust the gap between cards */
     flex-wrap: wrap; /* Allows the cards to wrap onto the next line if space is insufficient */
-  }
+  justify-content: center;
+}
   
   /* Card styles */
   .cardd {
