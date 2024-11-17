@@ -1,4 +1,3 @@
-
 // Get canvas and set context
 const canvas = document.getElementById('particleCanvas');
 const ctx = canvas.getContext('2d');
@@ -354,4 +353,44 @@ document.addEventListener('DOMContentLoaded', () => {
         
         lastScrollTop = scrollTop;
     });
-});
+
+    const contactForm = document.querySelector('.contact-form');
+    
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form values
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        // Here you can add your form submission logic
+        // For example, sending to a server or API
+        console.log('Form submitted:', { firstName, lastName, email, message });
+        
+        // Optional: Show success message
+        alert('Thank you for your message. We will get back to you soon!');
+        
+        // Reset form
+        contactForm.reset();
+    });
+});function showText(card) {
+    const textElement = card.querySelector('.text');
+    const hoverText = textElement.getAttribute('data-hover-text');
+    textElement.textContent = hoverText;
+  }
+  
+  function hideText(card) {
+    const textElement = card.querySelector('.text');
+    if (card.classList.contains('error')) {
+      textElement.textContent = 'Know more about us?';
+    } else if (card.classList.contains('info')) {
+      textElement.textContent = 'What do we do?';
+    } else if (card.classList.contains('success')) {
+      textElement.textContent = 'Why Join Us??';
+    } else if (card.classList.contains('warning')) {
+      textElement.textContent = 'Our Vison..';
+    }
+  }
+  

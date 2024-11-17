@@ -19,7 +19,7 @@
     <canvas id="particleCanvas"></canvas>
     <div class="preloader">
         <video id="preloader-video" muted>
-            <source src="assets/Animation - 1731771711365.mp4" type="video/mp4">
+            <source src="assets/Centered_Animation.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -43,6 +43,7 @@
         <div class="nav-menu">
             <div class="nav-links">
                 <a href="#home">Home</a>
+                <a href="#alertt">About us</a>
                 <a href="#events">Events</a>
                 <a href="#Projects">Projects</a>
                 <a href="#team">Team</a>
@@ -111,6 +112,86 @@
                 </div>
             </div>
         </section>
+        <section id="alertt">
+        <div class="alert-cards" id="alertt">
+            <div class="alert-card error" onmouseover="showText(this)" onmouseout="hideText(this)">
+              <div class="icon-text">
+                <svg
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 16h-1v-4h1m0-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                <p class="text" data-hover-text="Gooogle Developer Student Club is a student-led community focused on learning, building, and solving real world problems through technology. We empower students to grow as developers and leaders, fostering innovation and collaboration">Know more about us?</p>
+              </div>
+            </div>
+            <div class="alert-card info" onmouseover="showText(this)" onmouseout="hideText(this)">
+              <div class="icon-text">
+                <svg
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 16h-1v-4h1m0-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                <p class="text" data-hover-text="We provide hands-on learning experiences through workshops,hackathons, and real-world projects.Our focus is on exploring technologies like web development, AI, cloud computing, quantum computing and more.">What do we do?</p>
+              </div>
+            </div>
+            <div class="alert-card success" onmouseover="showText(this)" onmouseout="hideText(this)">
+              <div class="icon-text">
+                <svg
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 16h-1v-4h1m0-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                <p class="text" data-hover-text="Learn cutting-edge technologies, Connect with peers,industry experts, and Google mentors. Gain access to internships and career growth paths.">Why Join Us??</p>
+              </div>
+            </div>
+            <div class="alert-card warning" onmouseover="showText(this)" onmouseout="hideText(this)">
+              <div class="icon-text">
+                <svg
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 16h-1v-4h1m0-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                <p class="text" data-hover-text="We aim to bridge the gap between academics and industry by forstering a collaborative environment where students can innovate, grow and create solutions that make an imact. Join us to learn, build and lead!!">Our Vision..</p>
+              </div>
+            </div>
+          </div>
+          
         <div class="cardd-container">
             <div class="cardd odd-card-red">
                 <div class="default-text">LEARN</div>
@@ -127,7 +208,7 @@
                     <p>Network with skilled teammates and industry professionals as you build your
                         projects. Join a community where sharing knowledge and experiences is encouraged.</p>
                     <br>
-                        <button class="blue-button"><a href="#Connect">Join the Community</a></button>
+                        <button class="blue-button"><a href="https://chat.whatsapp.com/ISzPWBcam0C4w8c4R7bbr6" target="_blank">Join the Community</a></button>
                 </div>
             </div>
             <div class="cardd odd-card-green">
@@ -145,11 +226,11 @@
                     <p>Develop both personally and professionally and contribute through collaboration
                         and challenging projects in tech to create lasting impacts.</p>
                    <br>
-                        <button class="yellow-button"><a href="#Build">Click to see our Projects</a></button>
+                        <button class="yellow-button"><a href="#Projects">View our Projects</a></button>
                 </div>
             </div>
         </div>
-
+    </section>
 
         <!--after team section -->
         <section class="events-section" id="events">
@@ -425,66 +506,83 @@
                 <button class="see-all-btn">See All</button>
             </div>
         </section>
-        <section  id="contact">
-            <div class="text-section" >
-                <h1 class="contact-heading">Connect with Us</h1>
-                <form id="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <div class="container">
-                        <div class="btn"><a href="#">Send Message</a>
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <h1>Contact us</h1>
+                <p class="contact-desc">
+                    Need to get in touch with us? Either fill out the form with your inquiry or 
+                    find the <a href="mailto:gdsc@citchennai.net" class="department-email">department email</a> you'd like to contact below.
+                </p>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName"style="color:whitesmoke;">First name*</label>
+                            <input type="text" id="firstName" required>
                         </div>
+                        <div class="form-group">
+                            <label for="lastName"style="color:whitesmoke;">Last name</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email"style="color: whitesmoke;">Email*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" style="color: rgb(255, 251, 251);">What can we help you with?</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
                 </form>
-
-            </div>
             </div>
         </section>
 
 
 
-    </main>
-    <footer class="footer">
+    </main><footer class="footer">
         <div class="footer-content">
-          <div class="footer-section">
-            <div class="footer-logo">
-              <img src="./assets/logoNObg.png" alt="GDSC Logo" class="footer-logo-img">
-                
-              <h3>GDG-CIT MAIN CAMPUS</h3>
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="./assets/logoNObg.png" alt="GDSC Logo" class="footer-logo-img">
+                    <h3>GDG-CIT MAIN CAMPUS</h3>
+                </div>
+                <p>Empowering students to become innovators and tech leaders of tomorrow through learning, collaboration, and community building.</p>
             </div>
-            <p>Empowering students to become innovators and tech leaders of tomorrow through learning,
-              collaboration, and community building.</p>
-          </div>
-          <div class="footer-section footer-section--mobile">
-            <h3>Connect With Us</h3>
-            <div class="footer-social">
-              <a href="https://www.instagram.com/gdg.cit" class="social-hover">
-                <img src="./assets/instagram.png" alt="Instagram">
-              </a>
-              <a href="https://www.linkedin.com/company/gdsccit/" class="social-hover">
-                <img src="./assets/linkedin.png" alt="LinkedIn">
-              </a>
-              <a href="https://chat.whatsapp.com/ISzPWBcam0C4w8c4R7bbr6" class="social-hover">
-                <img src="./assets/WhatsApp_icon.png.webp" alt="WhatsApp">
-              </a>
+            <div class="footer-section footer-center">
+                <h3>Connect With Us</h3>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/gdg.cit" class="social-hover">
+                        <img src="./assets/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/gdsccit/" class="social-hover">
+                        <img src="./assets/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://chat.whatsapp.com/ISzPWBcam0C4w8c4R7bbr6" class="social-hover">
+                        <img src="./assets/WhatsApp_icon.png.webp" alt="WhatsApp">
+                    </a>
+                </div>
             </div>
-          </div>
+            
+            <div class="footer-section footer-right">
+                <h3>More Information</h3>
+                <p>Contact us: info@gdgcit.com</p>
+                <p>Phone: +91 00000000</p>
+            </div>
         </div>
         <div class="footer-bottom">
-          <div class="google-colors">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <p>&copy; 2024 GDSC-CIT. All rights reserved.</p>
+            <div class="google-colors">
+                <span style="background: #4285F4;"></span>
+                <span style="background: #34A853;"></span>
+                <span style="background: #FBBC05;"></span>
+                <span style="background: #EA4335;"></span>
+            </div>
+            <p>&copy; 2024 GDSC-CIT. All rights reserved.</p>
         </div>
-      </footer>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 
