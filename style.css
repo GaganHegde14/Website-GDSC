@@ -1738,7 +1738,7 @@ body.preload {
     padding: 10px;
     border-left: 4px solid;
     border-radius: 8px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.5s ease, background-color 0.5s ease;
     cursor: pointer;
     
     justify-content: center;
@@ -1750,22 +1750,23 @@ body.preload {
     height: 24px;
     margin-right: 10px;
   }
-  
   .alert-card .text {
     font-size: 14px;
     font-weight: bold;
-  }
+    opacity: 1; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+}
   
   .alert-card.success {
     background-color: #FBBC05;
     border-color: #fbbc05;
-    color: whitesmoke;
+    color: black;
   }
   
   .alert-card.info {
     background-color: #4285F4;
     border-color: #007bff;
-    color: whitesmoke;
+    color: black;
     font-weight: 900;
     border: 2px solid #007bff;
   }
@@ -1773,14 +1774,14 @@ body.preload {
   .alert-card.warning {
     background-color: #34A853;
     border-color: #ffc107;
-    color: whitesmoke;
+    color: black;
     border: 2px solid #34A853;
   }
   
   .alert-card.error {
     background-color: #DB4437;
     border-color: #dc3545;
-    color: whitesmoke;
+    color: black;
     border: 2px solid red;
   }
   
