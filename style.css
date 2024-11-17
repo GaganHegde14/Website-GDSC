@@ -1726,6 +1726,8 @@ body.preload {
     width: 70%;
     margin: 0 auto; /* Center horizontally */
     text-align: center; /* Center the text and elements */
+    background-color: #1a1a1a;
+    opacity: 0.8;
     margin-bottom: 20px;
   }
   
@@ -1755,46 +1757,36 @@ body.preload {
   }
   
   .alert-card.success {
-    background-color: #d4f4dd;
-    border-color: #28a745;
-    color: #2c7d34;
+    background-color: #FBBC05;
+    border-color: #fbbc05;
+    color: whitesmoke;
   }
   
   .alert-card.info {
-    background-color: #d9f0fc;
+    background-color: #4285F4;
     border-color: #007bff;
-    color: #0056b3;
+    color: whitesmoke;
+    font-weight: 900;
+    border: 2px solid #007bff;
   }
   
   .alert-card.warning {
-    background-color: #fff4d3;
+    background-color: #34A853;
     border-color: #ffc107;
-    color: #856404;
+    color: whitesmoke;
+    border: 2px solid #34A853;
   }
   
   .alert-card.error {
-    background-color: #f8d7da;
+    background-color: #DB4437;
     border-color: #dc3545;
-    color: #842029;
+    color: whitesmoke;
+    border: 2px solid red;
   }
   
   .alert-card:hover {
     transform: scale(1.05);
   }
   
-  .alert-card.success:hover {
-    background-color: #c8e6cb;
-  }
   
-  .alert-card.info:hover {
-    background-color: #cce5ff;
-  }
-  
-  .alert-card.warning:hover {
-    background-color: #ffeeba;
-  }
-  
-  .alert-card.error:hover {
-    background-color: #f5c6cb;
-  }
   
