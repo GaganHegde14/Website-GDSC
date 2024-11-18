@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
 
+/* Global Styles */
 
 * {
     margin: 0;
@@ -40,7 +41,6 @@ nav {
 .logo img {
     height: 25px;
 }
-
 
 main {
     padding-top: 60px;
@@ -85,6 +85,7 @@ main {
     max-width: 400px;
     height: 200px;
 }
+
 .belowSymbol {
     font-size: 2.5rem;
     font-weight: 900;
@@ -98,34 +99,36 @@ main {
 
 .text-section {
     flex: 1;
-    background-color: rgba(26, 26, 26, 0.9);;
+    background-color: rgba(26, 26, 26, 0.9);
     padding: 2rem;
     letter-spacing: -1px;
 }
+
 .animated-text {
     display: inline-block;
     letter-spacing: -4px; /* Adjust as needed */
     animation: colorChange 3s ;
     animation-delay: 3.9s; /* Add a delay for the animated text */
-  }
-  
-  @keyframes colorChange {
+}
+
+@keyframes colorChange {
     0% {
-      color:#EA4335;
+        color: #EA4335;
     }
     25% {
-      color: #4285F4;
+        color: #4285F4;
     }
     50% {
-      color: #34A853;
+        color: #34A853;
     }
     75% {
-      color: #FBBC05;
+        color: #FBBC05;
     }
     100% {
-      color: white;
+        color: white;
     }
-  }
+}
+
 h1 {
     font-size: 3.5rem;
     color: #EA4335;
@@ -149,7 +152,6 @@ h1 {
     height: 24px;
     opacity: 0.7;
     transition: opacity 0.3s;
-    
 }
 
 .social-icons img:hover {
@@ -220,39 +222,39 @@ h1 {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .building-section {
         height: auto;
         padding: 2rem 1rem;
     }
-    
+
     .belowSymbol {
         font-size: 1.8rem;
     }
-    
+
     h1 {
         font-size: 2.5rem;
         text-align: center;
     }
-    
+
     .text-section {
         padding: 1rem;
         text-align: center;
     }
-    
+
     .social-icons {
         justify-content: center;
     }
-    
+
     .team-section {
         padding: 2rem 1rem;
     }
-    
+
     .team-title {
         font-size: 2.5rem;
         margin-bottom: 2rem;
     }
-    
+
     .team-container {
         padding: 1rem;
     }
@@ -328,18 +330,17 @@ h1 {
     opacity: 1;
 }
 
-
 /* Add this to your media queries */
 @media (max-width: 768px) {
     .card {
         flex: 0 0 250px;
     }
-    
+
     .card img {
         width: 120px;
         height: 120px;
     }
-    
+
     .card h3 {
         font-size: 1.2rem;
     }
@@ -366,11 +367,12 @@ h1 {
 }
 
 /* Google colors for hover effects */
-.nav-links a:nth-child(1)::after { background: #4285F4; }  /* Blue */
-.nav-links a:nth-child(2)::after { background: #DB4437; }  /* Red */
-.nav-links a:nth-child(3)::after { background: #F4B400; }  /* Yellow */
-.nav-links a:nth-child(4)::after { background: #0F9D58; }  /* Green */
-.nav-links a:nth-child(5)::after { background: #4285F4; }  /* Blue */
+.nav-links a:nth-child(1)::after { background: #4285F4; } /* Blue */
+.nav-links a:nth-child(2)::after { background: #DB4437; } /* Red */
+.nav-links a:nth-child(3)::after { background: #F4B400; } /* Yellow */
+.nav-links a:nth-child(4)::after { background: #0F9D58; } /* Green */
+.nav-links a:nth-child(5)::after { background: #4285F4; } /* Blue */
+.nav-links a:nth-child(6)::after { background: #DB4437; } /* Red */
 
 /* Hover effect line */
 .nav-links a::after {
@@ -448,9 +450,11 @@ html {
     min-height: auto;
     padding: 4rem 2rem;
 }
+
 .events-section h1{
     color: whitesmoke;
 }
+
 .events-title {
     text-align: center;
     font-size: 4rem;
@@ -471,6 +475,7 @@ html {
     gap: 2rem;
     padding: 0 2rem;
 }
+
 .event-card,
 .project-card {
     background: #c0bfbf;
@@ -537,7 +542,6 @@ html {
     }
 }
 
-
 .event-image {
     width: 100%;
     height: 200px;
@@ -572,7 +576,7 @@ html {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
-    
+
     .event-card {
         min-height: 280px;
     }
@@ -583,11 +587,11 @@ html {
         grid-template-columns: 1fr;
         padding: 0 1rem;
     }
-    
+
     .event-card {
         min-height: 250px;
     }
-    
+
     .event-image {
         height: 180px;
     }
@@ -599,9 +603,11 @@ html {
     color: #333333;
     text-align: center;
 }
+
 .projects-section h1{
     color: black;
 }
+
 .projects-title {
     font-size: 2.5em;
     font-weight: bold;
@@ -615,7 +621,6 @@ html {
     justify-content: center;
     gap: 30px;
 }
-
 
 .project-card.visible {
     opacity: 1;
@@ -644,6 +649,7 @@ html {
     padding: 0 20px 20px;
     color: #666666;
 }
+
 /* Footer Section Styling */
 .footer-section {
     background-color: #DB4437; /* Red background color */
@@ -690,6 +696,7 @@ html {
     gap: 10px;
     margin-bottom: 10px;
 }
+
 .footer-center {
     text-align: center; /* Centers all text in this section */
     display: flex;
@@ -708,31 +715,32 @@ html {
     max-width: 32px; /* Adjust the size of social icons (if needed) */
     height: auto;
 }
-  /* Mobile Specific Styles */
-  .footer-section--mobile {
+
+/* Mobile Specific Styles */
+.footer-section--mobile {
     display: none; /* Initially hide social links on larger screens */
-  }
-  
-  /* Media Queries for Mobile Screens */
-  @media (min-width: 768px) {
+}
+
+/* Media Queries for Mobile Screens */
+@media (min-width: 768px) {
     .footer-section {
-      /* Remove padding on smaller screens */
-      padding: 20px 0;
+        /* Remove padding on smaller screens */
+        padding: 20px 0;
     }
-    
+
     .footer-section--mobile {
-      display: flex; /* Show social links on smaller screens */
-      justify-content: center; /* Center social links horizontally */
-      margin-top: 20px; /* Add spacing above social links */
+        display: flex; /* Show social links on smaller screens */
+        justify-content: center; /* Center social links horizontally */
+        margin-top: 20px; /* Add spacing above social links */
     }
-  }
-  
-  /* Basic Reset */
-  * {
+}
+
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 /* Canvas for the Particle Animation */
 /* Canvas Background */
@@ -746,7 +754,6 @@ html {
     background: #1a1a1a;
 }
 
-
 /* Main Content */
 .content {
     position: relative;
@@ -755,11 +762,10 @@ html {
     text-align: center;
     z-index: 1;
 }
+
 h2{
     color: white;
 }
-
-
 
 /* Add this breakpoint for tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -815,6 +821,7 @@ h2{
 .footer-section{
     background-color: #1a1a1a;
 }
+
 .footer-section h3 {
     color: #3a86ff;
     font-size: 1.5rem;
@@ -998,7 +1005,6 @@ h2{
     }
 }
 
-
 /* responsivity  */
 /* Base styles update */
 html, body {
@@ -1126,6 +1132,7 @@ html, body {
         padding: 1rem;
         scroll-behavior: smooth;
     }
+
     @keyframes scroll {
     
         5% {
@@ -1136,6 +1143,7 @@ html, body {
             transform: translateX(calc(-750px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
         }
     }
+
     .card {
         flex: 0 0 calc(50% - 1rem); /* Two cards per row */
         min-width: 250px;
@@ -1212,12 +1220,10 @@ html, body {
     text-align: center;
 }
 
-
 .building {
     max-width: 400px;
     height: 200px;
 }
-
 
 @keyframes fadeIn {
     0% {
@@ -1235,7 +1241,7 @@ html, body {
     .sym {
         animation-duration: 0.8s; /* Slightly faster on mobile */
     }
-    
+
     .belowSymbol {
         animation-delay: 3.8s;
     }
@@ -1246,11 +1252,11 @@ html, body {
     display: flex; /* Use flexbox for horizontal layout */
     gap: 50px; /* Optional: adjust the gap between cards */
     flex-wrap: wrap; /* Allows the cards to wrap onto the next line if space is insufficient */
-  justify-content: center;
+    justify-content: center;
 }
-  
-  /* Card styles */
-  .cardd {
+
+/* Card styles */
+.cardd {
     position: relative;
     width: 250px;
     height: 320px;
@@ -1263,44 +1269,44 @@ html, body {
     cursor: pointer;
     overflow: hidden;
     transition: color 0.5s;
-  }
-  
-  .cardd::before,
-  .cardd::after {
+}
+
+.cardd::before,
+.cardd::after {
     position: absolute;
     content: "";
     width: 20%;
     height: 20%;
     transition: all 0.5s;
     z-index: 1;
-  }
-  
-  .cardd::before {
+}
+
+.cardd::before {
     top: 0;
     right: 0;
     border-radius: 0 15px 0 100%;
-  }
-  
-  .cardd::after {
+}
+
+.cardd::after {
     bottom: 0;
     left: 0;
     border-radius: 0 100% 0 15px;
-  }
-  
-  /* Hover effects for expanding background */
-  .cardd:hover::before,
-  .cardd:hover::after {
+}
+
+/* Hover effects for expanding background */
+.cardd:hover::before,
+.cardd:hover::after {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-  }
-  
-  .cardd:hover {
+}
+
+.cardd:hover {
     color: white; /* Change text color on hover */
-  }
-  
-  /* Container for hover text */
-  .cardd .hover-text {
+}
+
+/* Container for hover text */
+.cardd .hover-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -1318,76 +1324,78 @@ html, body {
     transition: opacity 0.5s ease-in-out;
     z-index: 2;
     border-radius: 15px;
-  }
-  
-  /* Show hover text on hover */
-  .cardd:hover .hover-text {
+}
+
+/* Show hover text on hover */
+.cardd:hover .hover-text {
     opacity: 1;
-  }
-  
-  /* Unique background colors for each card */
-  .odd-card-red {
+}
+
+/* Unique background colors for each card */
+.odd-card-red {
     background-color: rgba(26, 26, 26, 0.5);
     color: #DB4437;
     border: #DB4437 solid;
-  }
-  
-  .odd-card-red::before,
-  .odd-card-red::after {
+}
+
+.odd-card-red::before,
+.odd-card-red::after {
     color: white;
     background-color: #DB4437;
-  }
-  
-  .odd-card-blue {
+}
+
+.odd-card-blue {
     color: #4285F4;
-    
+
     background-color: rgba(26, 26, 26, 0.5);
-    
+
     border: #4285F4 solid;
-  }
-  
-  .odd-card-blue::before,
-  .odd-card-blue::after {
+}
+
+.odd-card-blue::before,
+.odd-card-blue::after {
     background-color: #4285F4;
-  }
-  
-  .odd-card-green {
-    
+}
+
+.odd-card-green {
+
     background-color: rgba(26, 26, 26, 0.5);
     border: #34A853 solid;
     color: #34A853;
-  }
-  
-  .odd-card-green::before,
-  .odd-card-green::after {
+}
+
+.odd-card-green::before,
+.odd-card-green::after {
     background-color: #34A853;
-  }
-  
-  .odd-card-yellow {
-    
+}
+
+.odd-card-yellow {
+
     background-color: rgba(26, 26, 26, 0.5);
-    
+
     border: #FBBC05 solid;
     color: #FBBC05;
-  }
-  
-  .odd-card-yellow::before,
-  .odd-card-yellow::after {
+}
+
+.odd-card-yellow::before,
+.odd-card-yellow::after {
     background-color: #FBBC05;
-  }
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .cards-container {
-      flex-direction: column;   /* Stack cards vertically */
-      align-items: center;      /* Center cards */
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
     }
-  
+
     .card {
-      width: 100%;              /* Make each card take the full width on small screens */
-      max-width: 100%;          /* Ensure cards take full width */
-      margin-bottom: 20px;      /* Add space between stacked cards */
+        width: 100%; /* Make each card take the full width on small screens */
+        max-width: 100%; /* Ensure cards take full width */
+        margin-bottom: 20px; /* Add space between stacked cards */
     }
-  }
-  /* Ensure paragraph and button are treated as blocks inside hover-text */
+}
+
+/* Ensure paragraph and button are treated as blocks inside hover-text */
 .cardd .hover-text {
     display: flex;
     flex-direction: column; /* Stack children vertically */
@@ -1415,6 +1423,7 @@ html, body {
 .red-button {
     background-color: #DB4437; /* Red */
 }
+
 .red-button:hover {
     background-color: #b03629; /* Darker Red */
 }
@@ -1423,6 +1432,7 @@ html, body {
 .blue-button {
     background-color: #4285F4; /* Blue */
 }
+
 .blue-button:hover {
     background-color: #3367c1; /* Darker Blue */
 }
@@ -1431,6 +1441,7 @@ html, body {
 .green-button {
     background-color: #34A853; /* Green */
 }
+
 .green-button:hover {
     background-color: #27853c; /* Darker Green */
 }
@@ -1439,6 +1450,7 @@ html, body {
 .yellow-button {
     background-color: #FBBC05; /* Yellow */
 }
+
 .yellow-button:hover {
     background-color: #e5a800; /* Darker Yellow */
 }
@@ -1559,7 +1571,7 @@ html, body {
     .button-container {
         margin-top: 1.5rem;
     }
-    
+
     .see-all-btn {
         padding: 0.7rem 1.8rem;
         font-size: 0.9rem;
@@ -1640,7 +1652,6 @@ body.preload {
     margin-top: -1rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    
 }
 
 .form-row {
@@ -1663,7 +1674,6 @@ body.preload {
 
 .form-group input,
 .form-group textarea {
-    
     width: 80%;
     padding: 0.8rem;
     border: 1px solid #e0e0e0;
@@ -1718,76 +1728,125 @@ body.preload {
         padding: 1.5rem;
     }
 }
+
+/* Alert cards container */
+/* .alert-container{
+    border: 2px solid red;
+} */
 .alert-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
     padding: 20px;
     width: 70%;
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center the text and elements */
+    margin: 0 auto;
+    text-align: center;
     background-color: #1a1a1a;
     opacity: 0.8;
     margin-bottom: 20px;
-  }
-  
-  
-  .alert-card {
+    position: relative;
+}
+
+/* Base alert card styles */
+.alert-card {
+    position: relative;
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-left: 4px solid;
+    padding: 1.5rem;
     border-radius: 8px;
-    transition: transform 0.5s ease, background-color 0.5s ease;
     cursor: pointer;
-    
-    justify-content: center;
-    justify-items: center;
-  }
-  
-  .alert-card .icon {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100px;
+    overflow: hidden;
+    background-color: inherit;
+    z-index: 1;
+    transform-origin: center;
+    margin: 0;
+}
+
+.alert-card .icon-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.alert-card .icon {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
-  }
-  .alert-card .text {
+    flex-shrink: 0;
+}
+
+.alert-card .text {
     font-size: 14px;
     font-weight: bold;
-    opacity: 1; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-  
-  .alert-card.success {
+
+/* Enhanced hover effect */
+.alert-card:hover {
+    transform: scale(1.15);
+    z-index: 100;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Card type specific styles with hover states */
+.alert-card.success {
     background-color: #FBBC05;
-    border-color: #fbbc05;
+    border: 2px solid #fbbc05;
     color: black;
-  }
-  
-  .alert-card.info {
+}
+
+.alert-card.success:hover {
+    background-color: #FBBC05;
+    border-color: #e0aa00;
+}
+
+.alert-card.info {
     background-color: #4285F4;
-    border-color: #007bff;
-    color: black;
-    font-weight: 900;
     border: 2px solid #007bff;
-  }
-  
-  .alert-card.warning {
+    color: black;
+}
+
+.alert-card.info:hover {
+    background-color: #4285F4;
+    border-color: #0056b3;
+}
+
+.alert-card.warning {
     background-color: #34A853;
-    border-color: #ffc107;
-    color: black;
     border: 2px solid #34A853;
-  }
-  
-  .alert-card.error {
-    background-color: #DB4437;
-    border-color: #dc3545;
     color: black;
-    border: 2px solid red;
-  }
-  
-  .alert-card:hover {
-    transform: scale(1.05);
-  }
-  
-  
-  
+}
+
+.alert-card.warning:hover {
+    background-color: #34A853;
+    border-color: #2d8045;
+}
+
+.alert-card.error {
+    background-color: #DB4437;
+    border: 2px solid #dc3545;
+    color: black;
+}
+
+.alert-card.error:hover {
+    background-color: #DB4437;
+    border-color: #bd2130;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .alert-cards {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 0.3rem;
+    }
+
+    .alert-card:hover {
+        transform: scale(1.1);
+        /* font-size: 2px; */
+    }
+}
