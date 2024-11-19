@@ -203,6 +203,7 @@ h1 {
 .card {
     flex: 0 0 300px;
     min-width: 300px;
+    height: 390px;
     background: #BDBDBD;
     border-radius: 15px;
     padding: 1.5rem;
@@ -680,8 +681,11 @@ html {
 
 .footer-social {
     display: flex;
-    gap: 10px; /* Space between social icons */
     justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between social icons */
+    margin-top: 10px;
+    width: 100%;
 }
 
 .footer-bottom {
@@ -1119,81 +1123,60 @@ html, body {
 /* Team section responsive fixes */
 @media (max-width: 768px) {
     .team-container {
-        overflow: hidden;
-        padding: 1rem 0;
+        overflow: visible;
+        padding: 0.5rem;
+        height: auto;
     }
 
     .card-track {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        animation: none; /* Disable scroll animation on mobile */
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;  /* IE/Edge */
         padding: 1rem;
-        scroll-behavior: smooth;
+        gap: 1.5rem;
     }
 
-    @keyframes scroll {
-    
-        5% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-300px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
-            transform: translateX(calc(-750px * 5 - 2rem * 5)); /* Adjust based on card width and gap */
-        }
+    .card-track::-webkit-scrollbar {
+        display: none; /* Chrome/Safari/Opera */
     }
 
-    .card {
-        flex: 0 0 calc(50% - 1rem); /* Two cards per row */
-        min-width: 250px;
-        margin: 0;
-        animation: fadeIn 0.5s ease forwards;
-    }
-
-    /* Fade in animation for cards */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .team-card {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
     }
 }
 
 /* Additional fixes for very small devices */
 @media (max-width: 480px) {
+    .team-container {
+        padding: 0.3rem;
+    }
+
+    .card-track {
+        gap: 0.6rem;
+        padding: 0.3rem;
+    }
+
     .card {
-        flex: 0 0 100%; /* One card per row */
-    }
-}
-
-/* Update the social links for mobile devices */
-@media (max-width: 768px) {
-    .card .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 0.8rem; /* Reduce gap between icons */
+        height: 200px;
+        padding: 0.4rem;
     }
 
-    .card .social-links img {
-        width: 24px; /* Smaller icon size for mobile */
-        height: 24px;
-    }
-}
-
-/* Even smaller for very small devices */
-@media (max-width: 480px) {
-    .card .social-links img {
-        width: 20px; /* Even smaller for very small screens */
-        height: 20px;
+    .card img {
+        width: 50px;
+        height: 50px;
     }
 
-    .card .social-links {
-        gap: 0.6rem; /* Further reduce gap */
+    .card h3 {
+        font-size: 0.85rem;
+    }
+
+    .card p {
+        font-size: 0.75rem;
     }
 }
 
@@ -1848,6 +1831,40 @@ body.preload {
     .alert-card:hover {
         transform: scale(1.1);
         /* font-size: 2px; */
+        height: fit-content;
     }
 }
 
+/*IMPORTANT Mobile Responsive Styles for team section*/
+@media screen and (max-width: 480px) {
+    .card {
+        flex: 0 0 220px !important;
+        min-width: 220px !important;
+        height: 230px !important;
+    }
+
+    .social-icons {
+        gap: 0.8rem !important;
+        margin-left: 30% !important;
+    }
+
+    .social-icons img {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .team-container {
+        height: 280px !important;
+    }
+
+    .team-section {
+        min-height: auto !important;
+        padding: 2rem 1rem !important;
+    }
+
+    /* Reduce social icons size in team cards */
+    .social-links img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
