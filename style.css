@@ -1869,3 +1869,77 @@ body.preload {
         height: 20px !important;
     }
 }
+
+/* From Uiverse.io by 0800Gonza */
+.unique-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+  }
+  
+  /* For all social containers */
+  .unique-social-container {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 1s;
+  }
+  
+  /* WhatsApp container */
+  .whatsapp-container:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+  }
+  
+  /* LinkedIn container */
+  .linkedin-container:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+  }
+  
+  /* Instagram container */
+  .instagram-container:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+  }
+  
+  /* Active state (when clicked) */
+  .unique-social-container:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  /* SVG styling */
+  .unique-social-svg {
+    width: 17px;
+  }
+  
+  .unique-social-svg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  /* Hover effect for SVGs */
+  .unique-social-container:hover .unique-social-svg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  /* Slide-in animation for SVG */
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
