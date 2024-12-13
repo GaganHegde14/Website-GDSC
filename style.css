@@ -55,11 +55,43 @@ main {
     align-items: center;
 }
 
+.home-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 3s; /* Adjust this delay to match your other animations */
+}
+
+.home-logo-img {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.home-logo-img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .content {
     display: flex;
     width: 100%;
     padding: 2rem;
-    gap: 2rem;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    min-height: 100vh; /* Make it take full viewport height */
 }
 
 .building-section {
@@ -72,14 +104,7 @@ main {
     text-align: center;
 }
 
-.sym {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    opacity: 0;
-    animation: slideInFromLeft 1s ease-out forwards;
-    animation-delay: 3.5s; /* Adjust delay to 3 seconds */
-}
+
 
 .building {
     max-width: 400px;
@@ -98,12 +123,13 @@ main {
 }
 
 .text-section {
-    flex: 1;
+    flex: 0 1 800px; /* Instead of flex: 1, give it a max-width */
     background-color: rgba(26, 26, 26, 0.9);
     padding: 2rem;
     letter-spacing: -1px;
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center the section */
 }
-
 .animated-text {
     display: inline-block;
     letter-spacing: -4px; /* Adjust as needed */
@@ -219,9 +245,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .home-logo-img {
+        width: 120px; /* Smaller size for mobile */
+    }
     .content {
-        flex-direction: column;
-        gap: 1rem;
+        padding: 1rem;
     }
 
     .building-section {
@@ -240,7 +268,7 @@ h1 {
 
     .text-section {
         padding: 1rem;
-        text-align: center;
+        width: 100%;
     }
 
     .social-icons {
@@ -1947,3 +1975,38 @@ body.preload {
     }
   }
   
+/* For the logo */
+.logo a:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+/* Add line between logos */
+.logo a:first-child {
+    position: relative;
+}
+
+.logo a:first-child img:first-child {
+    margin-right: 20px; /* Space for the line */
+}
+
+/* The actual line */
+.logo-divider {
+    width: 1.5px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    left: 49px; /* Adjust this value to position the line */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.gdgLOGO {
+    margin-left: -10px;
+}
+
+.clgLOGO {
+    height: 35px !important; /* Increased from default size */
+}
