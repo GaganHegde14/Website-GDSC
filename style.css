@@ -449,7 +449,7 @@ html {
 
 .events-section {
     min-height: auto;
-    padding: 4rem 2rem;
+    padding-top: 4rem;
 }
 
 .events-section h1{
@@ -459,7 +459,8 @@ html {
 .events-title {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1.6rem;
+    margin-top: 4rem;
     transform: translateY(50px);
     opacity: 0.9;
 }
@@ -1736,6 +1737,7 @@ body.preload {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center; /* This line centers content horizontally */
     padding: 1.5rem;
     border-radius: 8px;
     cursor: pointer;
@@ -1748,14 +1750,16 @@ body.preload {
     margin: 0;
 }
 
+
 .alert-card .icon-text {
-    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center; /* Centers the icon and text horizontally */
     gap: 1rem;
     position: relative;
     z-index: 2;
 }
+
 
 .alert-card .icon {
     width: 24px;
@@ -1778,9 +1782,9 @@ body.preload {
 
 /* Card type specific styles with hover states */
 .alert-card.success {
-    background-color: #FBBC05;
+    background-color: #4b3801;
     border: 2px solid #fbbc05;
-    color: black;
+    color: whitesmoke;
 }
 
 .alert-card.success:hover {
@@ -1789,9 +1793,9 @@ body.preload {
 }
 
 .alert-card.info {
-    background-color: #4285F4;
+    background-color: rgb(20,40,73);
     border: 2px solid #007bff;
-    color: black;
+    color: whitesmoke;
 }
 
 .alert-card.info:hover {
@@ -1800,9 +1804,9 @@ body.preload {
 }
 
 .alert-card.warning {
-    background-color: #34A853;
+    background-color: rgb(16, 50, 25);
     border: 2px solid #34A853;
-    color: black;
+    color: whitesmoke;
 }
 
 .alert-card.warning:hover {
@@ -1811,9 +1815,9 @@ body.preload {
 }
 
 .alert-card.error {
-    background-color: #DB4437;
+    background-color: rgb(65, 20, 16);
     border: 2px solid #dc3545;
-    color: black;
+    color: whitesmoke;
 }
 
 .alert-card.error:hover {
