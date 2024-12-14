@@ -192,13 +192,17 @@ h1 {
 
 .team-title {
     text-align: center;
-    color: #4285F4; /* Google Blue color */
+    color:white;
     margin-bottom: 3rem;
     font-size: 4rem;
     font-weight: bold;
     padding-top: 2rem;
     opacity: 1; /* Make sure it's fully visible */
     position: relative;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .team-title.visible {
@@ -491,7 +495,13 @@ html {
     margin-top: 4rem;
     transform: translateY(50px);
     opacity: 0.9;
+    font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  
 }
+
 
 .events-title.visible {
     animation: fadeInUp 1s ease forwards;
@@ -1071,6 +1081,10 @@ html, body {
         width: 100%;
         padding: 0;
         word-wrap: break-word;
+        font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
     }
     
 
@@ -1316,6 +1330,7 @@ html, body {
 
 .cardd:hover {
     color: white; /* Change text color on hover */
+   
 }
 
 /* Container for hover text */
@@ -1337,6 +1352,11 @@ html, body {
     transition: opacity 0.5s ease-in-out;
     z-index: 2;
     border-radius: 15px;
+    font-family: "Montserrat", serif;
+  font-size: large;
+    font-weight: 520;
+  font-style: normal;
+    
 }
 
 /* Show hover text on hover */
@@ -1478,6 +1498,7 @@ html, body {
     width: 100px;
     height: 3px;
     background: linear-gradient(to right, #4285F4, #DB4437, #F4B400, #0F9D58); /* Google colors */
+    
 }
 
 /* Responsive adjustments */
@@ -1786,6 +1807,10 @@ body.preload {
     gap: 1rem;
     position: relative;
     z-index: 2;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    
 }
 
 
@@ -1796,8 +1821,6 @@ body.preload {
 }
 
 .alert-card .text {
-    font-size: 14px;
-    font-weight: bold;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -1818,6 +1841,8 @@ body.preload {
 .alert-card.success:hover {
     background-color: #FBBC05;
     border-color: #e0aa00;
+    font-size: 12px;
+    transition: font-size 0.8s ease-in-out; 
 }
 
 .alert-card.info {
@@ -1829,6 +1854,8 @@ body.preload {
 .alert-card.info:hover {
     background-color: #4285F4;
     border-color: #0056b3;
+    font-size: 12px;
+    transition: font-size 0.8s ease-in-out; 
 }
 
 .alert-card.warning {
@@ -1840,6 +1867,8 @@ body.preload {
 .alert-card.warning:hover {
     background-color: #34A853;
     border-color: #2d8045;
+    font-size: 12px;
+    transition: font-size 0.8s ease-in-out; 
 }
 
 .alert-card.error {
@@ -1851,6 +1880,8 @@ body.preload {
 .alert-card.error:hover {
     background-color: #DB4437;
     border-color: #bd2130;
+    font-size: 12px;
+    transition: font-size 0.8s ease-in-out; 
 }
 
 /* Responsive adjustments */
